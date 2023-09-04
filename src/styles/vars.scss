@@ -1,0 +1,14 @@
+// root variables
+:root {
+  color-scheme: light;
+
+  --app-page-bg: #fff;
+  --app-title-color: #030303;
+}
+
+:root[color-schema='dark'] {
+  color-scheme: dark;
+
+  --app-page-bg: #1e1e1e;
+  --app-title-color: #fdfdfd;
+}

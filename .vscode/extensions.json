@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "stylelint.vscode-stylelint",
+    "vue.volar",
+    "Vue.vscode-typescript-vue-plugin",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "gruntfuggly.todo-tree",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}
