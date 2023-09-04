@@ -26,6 +26,7 @@ const { caches: keepAliveCaches } = useAppSDK().keepAlive
         <Transition
           :name="transitionName"
           :appear="true"
+          :css="!!transitionName"
         >
           <KeepAlive :include="keepAliveCaches">
             <Component

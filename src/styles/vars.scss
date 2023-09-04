@@ -6,7 +6,7 @@
   --app-title-color: #030303;
 }
 
-:root[color-schema='dark'] {
+:root.dark {
   color-scheme: dark;
 
   --app-page-bg: #1e1e1e;

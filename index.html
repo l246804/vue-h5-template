@@ -27,6 +27,16 @@
         overflow: auto;
       }
     </style>
+    
+    <script>
+      ;(function () {
+        const prefersDark
+    = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
+        if (setting === 'dark' || (prefersDark && setting !== 'light'))
+          document.documentElement.classList.toggle('dark', true)
+      })()
+    </script>
   </head>
   <!-- 解决 ios 无法触发组件点击反馈效果 -->
   <body ontouchstart="">

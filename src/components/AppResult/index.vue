@@ -65,7 +65,7 @@ const slots = useSlots()
   }
 }
 
-[color-schema='dark'] {
+:root.dark {
   .app-result {
     --result-bg: #303030;
   }
