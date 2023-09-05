@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/l246804/vue-h5-template/compare/v0.1.0...v0.1.1) (2023-09-05)
+
+
+### Chores
+
+* 🤖 update deps ([53c646e](https://github.com/l246804/vue-h5-template/commit/53c646e134e6a739bd196c91e9f7ae5e90e7bb98))
+
 ## [0.1.0](https://github.com/l246804/vue-h5-template/compare/v0.0.1...v0.1.0) (2023-09-04)
 
 
