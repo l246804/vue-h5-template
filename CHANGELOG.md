@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.3](https://github.com/l246804/vue-h5-template/compare/v0.1.2...v0.1.3) (2023-09-05)
+
+
+### Chores
+
+* 🤖 优化 vite.config.ts 代码 ([be4fd1d](https://github.com/l246804/vue-h5-template/commit/be4fd1d4ed12d4517e6dc199db2d2fc6ac72b856))
+
+
+### Docs
+
+* ✏️ 更改 README.md ([003191b](https://github.com/l246804/vue-h5-template/commit/003191b0c8594f777520d1b30dceb0b790aafc50))
+
 ## [0.1.2](https://github.com/l246804/vue-h5-template/compare/v0.1.1...v0.1.2) (2023-09-05)
 
 
