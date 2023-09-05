@@ -104,17 +104,17 @@ export default defineConfig((configEnv) => {
         plugins: [
           Autoprefixer(),
           Px2Vw({
+            propList: ['*'],
             unitToConvert: 'px',
+            minPixelValue: 1,
+            mediaQuery: true,
             viewportWidth: (file) =>
               /node_modules[\\/]vant[\\/]/.test(file)
                 ? 375
                 : env.VITE_PX_TO_VIEWPORT_CONFIG.designWidth,
             unitPrecision: env.VITE_PX_TO_VIEWPORT_CONFIG.precision,
-            propList: ['*'],
             viewportUnit: env.VITE_PX_TO_VIEWPORT_CONFIG.unit,
             fontViewportUnit: env.VITE_PX_TO_VIEWPORT_CONFIG.unit,
-            minPixelValue: 1,
-            mediaQuery: true,
             exclude: [/node_modules[\\/]vite-plugin-*/],
           }),
         ],
