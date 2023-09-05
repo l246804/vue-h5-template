@@ -57,8 +57,8 @@ dependencies:
     specifier: ^3.3.4
     version: 3.3.4
   vue-app-sdk:
-    specifier: ^0.0.3
-    version: 0.0.3(typescript@5.2.2)(vue-router@4.2.4)(vue@3.3.4)
+    specifier: ^0.1.0
+    version: 0.1.0(typescript@5.2.2)(vue-router@4.2.4)(vue@3.3.4)
   vue-echarts:
     specifier: ^6.6.1
     version: 6.6.1(echarts@5.4.3)(vue@3.3.4)
@@ -9100,8 +9100,8 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /vue-app-sdk@0.0.3(typescript@5.2.2)(vue-router@4.2.4)(vue@3.3.4):
-    resolution: {integrity: sha512-uL4qB+CAfhicSvB+meJKxJu2VZDjAQUvEQgMoEndHYMk8Xhsg52g+4GChezN6hNyBxEVeYAaankd7VAGuQ+SPg==}
+  /vue-app-sdk@0.1.0(typescript@5.2.2)(vue-router@4.2.4)(vue@3.3.4):
+    resolution: {integrity: sha512-7fW2rgaZrN4VVv80K7JpzBo/jPEAzI+x71OfR1JcCnes0W17oVZh0EjwLF7+JUWHXhABp3B0Uga+MplqsmirZw==}
     engines: {node: '>=14'}
     peerDependencies:
       vue: '>=3'
@@ -9111,6 +9111,7 @@ packages:
       '@rhao/types-base': 0.2.0(typescript@5.2.2)
       '@types/lodash': 4.14.197
       '@types/lodash-es': 4.17.9
+      '@vueuse/core': 10.4.1(vue@3.3.4)
       hookable: 5.5.3
       lodash: 4.17.21
       lodash-es: 4.17.21
@@ -9118,6 +9119,7 @@ packages:
       vue: 3.3.4
       vue-router: 4.2.4(vue@3.3.4)
     transitivePeerDependencies:
+      - '@vue/composition-api'
       - typescript
     dev: false
 

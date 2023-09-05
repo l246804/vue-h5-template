@@ -5,10 +5,8 @@ import AppSideMenu from '@/components/AppSideMenu'
 
 defineOptions({
   name: 'Tabbar',
-  inheritAttrs: false,
 })
 
-const attrs = useAttrs()
 const { caches: keepAliveCaches } = useAppSDK().keepAlive
 const { disable: disableAnimation } = useAppSDK().animation
 
@@ -58,10 +56,7 @@ const [showSideMenu, toggleShowSideMenu] = useToggle(false)
 
     <RouterView v-slot="{ Component: routerComp }">
       <KeepAlive :include="keepAliveCaches">
-        <Component
-          :is="routerComp"
-          v-bind="attrs"
-        />
+        <Component :is="routerComp" />
       </KeepAlive>
     </RouterView>
 
