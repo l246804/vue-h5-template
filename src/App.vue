@@ -1,10 +1,11 @@
 <script setup lang="ts">
+import { getFullURL } from '@rhao/web-utils'
 import AppMobileDetector from '@/components/AppMobileDetector'
 
 useHead({
   title: __ENV__.VITE_APP_TITLE,
   link: [
-    { rel: 'icon', type: 'image/svg+xml', href: __ENV__.VITE_APP_ICON },
+    { rel: 'icon', type: 'image/svg+xml', href: getFullURL(__ENV__.VITE_APP_ICON) },
   ],
   meta: [
     { name: 'description', content: __ENV__.VITE_APP_DESC },

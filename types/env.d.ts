@@ -2,7 +2,7 @@ export interface ViteEnv {
   /**
    * 应用基路径
    */
-  VITE_BASE_URL: string
+  VITE_APP_BASE_URL: string
   /**
    * 应用接口基路径
    */

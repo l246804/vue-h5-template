@@ -17,7 +17,7 @@ export default defineConfig((configEnv) => {
   const env = toolkit.loadEnv()
 
   return {
-    base: env.VITE_BASE_URL,
+    base: env.VITE_APP_BASE_URL,
 
     server: {
       host: true,
