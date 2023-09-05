@@ -7,7 +7,7 @@
 - 克隆代码
 
 ```shell
-git clone https://github.com/l246804/vue-h5-template.git [可选，目录名]
+git clone https://github.com/l246804/vue-h5-template.git [可选，项目名]
 ```
 
 - 安装依赖
