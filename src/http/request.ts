@@ -2,6 +2,7 @@ import { createRequestHook } from '@rhao/request'
 import { isEqual } from 'lodash-es'
 import type { AxiosError, AxiosResponse } from 'axios'
 import { RequestThrottle } from '@rhao/request-basic-middleware/throttle'
+import { RequestDebounce } from '@rhao/request-basic-middleware/debounce'
 import { RequestRefresh } from '@rhao/request-basic-middleware/refresh'
 import { RequestRefreshToken } from '@rhao/request-basic-middleware/refresh-token'
 import { RequestSWR } from '@rhao/request-basic-middleware/swr'
@@ -46,6 +47,8 @@ export const useRequest = createRequestHook({
     RequestVue(),
 
     RequestAxios(),
+
+    RequestDebounce(),
 
     RequestThrottle(),
 

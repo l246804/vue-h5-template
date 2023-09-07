@@ -1,1 +1,73 @@
 // Utils
+.utils-full-w {
+  width: 100%;
+}
+
+.utils-full-h {
+  height: 100%;
+}
+
+.utils-full-wh {
+  /* stylelint-disable-next-line scss/at-extend-no-missing-placeholder */
+  @extend .utils-full-w, .utils-full-h;
+}
+
+.utils-subitems-has-mt {
+  > :not(:first-child) {
+    margin-top: var(--mt-space, 10px);
+  }
+}
+
+.utils-subitems-has-ml {
+  > :not(:first-child) {
+    margin-left: var(--ml-space, 10px);
+  }
+}
+
+.utils-horizontal-layout,
+.utils-vertical-layout {
+  display: flex;
+
+  > .utils-main-area {
+    flex: var(--layout-flex, auto);
+  }
+
+  > .utils-deputy-area {
+    flex: none;
+  }
+}
+
+.utils-vertical-layout {
+  flex-direction: column;
+}
+
+.utils-flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.utils-flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.utils-flex-between-center {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.utils-flex-items-center {
+  align-items: center;
+}
+
+.utils-inline-flex {
+  display: inline-flex;
+}
+
+.utils-flex {
+  display: flex;
+}
+
+.utils-margin-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
