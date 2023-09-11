@@ -84,7 +84,7 @@ devDependencies:
     version: 7.0.1(release-it@16.1.5)
   '@rhao/plop-generators':
     specifier: latest
-    version: 0.8.1(inquirer@9.2.10)(plop@4.0.0)
+    version: 0.8.2(inquirer@9.2.10)(plop@4.0.0)
   '@rhao/types-base':
     specifier: ^0.2.0
     version: 0.2.0(typescript@5.2.2)
@@ -2258,8 +2258,8 @@ packages:
       - typescript
     dev: false
 
-  /@rhao/plop-generators@0.8.1(inquirer@9.2.10)(plop@4.0.0):
-    resolution: {integrity: sha512-hiPCYGuBAb8oOVBrSbb3ocDWowRVjxQPnYTk4tI2RwSSnZQ2naP2fMWVm5R14jq6XnEnwsSE5Ih5lJK7mxjqVQ==}
+  /@rhao/plop-generators@0.8.2(inquirer@9.2.10)(plop@4.0.0):
+    resolution: {integrity: sha512-5DIjOdZxMba8s1hXHbudZltElegIMlRD8aWuQbYxNW4DrdKd3ht3kcDlZGvzjWSUK/4oE9AyDZVHo1LfujfCWA==}
     engines: {node: '>=16'}
     peerDependencies:
       plop: '>=3'

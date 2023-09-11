@@ -71,7 +71,7 @@ export default defineConfig((configEnv) => {
           },
         ],
         dts: 'src/types/auto-imports.d.ts',
-        dirs: ['src/stores', 'src/hooks'],
+        dirs: ['src/stores', 'src/hooks', 'src/services'],
         vueTemplate: true,
         resolvers: [VantResolver({ importStyle: false })],
       }),
