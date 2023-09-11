@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.6](https://github.com/l246804/vue-h5-template/compare/v0.1.5...v0.1.6) (2023-09-11)
+
+
+### Chores
+
+* 🤖 优化模板 ([1611187](https://github.com/l246804/vue-h5-template/commit/16111874838f6910af29083ed015b22c745f567d))
+
 ## [0.1.5](https://github.com/l246804/vue-h5-template/compare/v0.1.3...v0.1.5) (2023-09-11)
 
 
