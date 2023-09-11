@@ -1,3 +1,4 @@
+import type { BasicRequestHook, RequestFetcher, RequestOptions, RequestResult } from '@rhao/request'
 import { createRequestHook } from '@rhao/request'
 import { isEqual } from 'lodash-es'
 import type { AxiosError, AxiosResponse } from 'axios'
@@ -14,6 +15,15 @@ import {
   normalizeResponseDataByBlob,
   validAxiosResponse,
 } from './utils'
+
+type FlattenAxiosResponse<T> = T extends AxiosResponse<infer D> ? D : T
+
+export interface UseRequest extends BasicRequestHook {
+  <TData, TParams extends unknown[] = unknown[]>(
+    fetcher: RequestFetcher<TData, TParams>,
+    options?: RequestOptions<FlattenAxiosResponse<TData>, TParams>,
+  ): RequestResult<FlattenAxiosResponse<TData>, TParams>
+}
 
 export const useRequest = createRequestHook({
   // 设置数据对比器
