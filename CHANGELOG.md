@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.7](https://github.com/l246804/vue-h5-template/compare/v0.1.6...v0.1.7) (2023-09-11)
+
+
+### Chores
+
+* 🤖 设置 useRequest 正确类型 ([eaf31f1](https://github.com/l246804/vue-h5-template/commit/eaf31f112d9f36d81c8accf430c4207f097a4b20))
+
 ## [0.1.6](https://github.com/l246804/vue-h5-template/compare/v0.1.5...v0.1.6) (2023-09-11)
 
 
