@@ -82,4 +82,4 @@ export const useRequest = createRequestHook({
       staleTime: 60e3 * 5,
     }),
   ],
-})
+}) as UseRequest
