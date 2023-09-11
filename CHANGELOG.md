@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.5](https://github.com/l246804/vue-h5-template/compare/v0.1.3...v0.1.5) (2023-09-11)
+
+
+### Chores
+
+* 🤖 完善 services 目录管理文档 ([e456b40](https://github.com/l246804/vue-h5-template/commit/e456b40773cff9d2601cca9b37c4be7f9d04d264))
+* 🤖 完善模板功能 ([cab7a33](https://github.com/l246804/vue-h5-template/commit/cab7a33b8a35070d9deb54012631b4b2271008de))
+
 ## [0.1.4](https://github.com/l246804/vue-h5-template/compare/v0.1.3...v0.1.4) (2023-09-07)
 
 
