@@ -2,11 +2,12 @@ import type { BasicRequestHook, RequestFetcher, RequestOptions, RequestResult } 
 import { createRequestHook } from '@rhao/request'
 import { isEqual } from 'lodash-es'
 import type { AxiosError, AxiosResponse } from 'axios'
-import { RequestThrottle } from '@rhao/request-basic-middleware/throttle'
-import { RequestDebounce } from '@rhao/request-basic-middleware/debounce'
-import { RequestRefresh } from '@rhao/request-basic-middleware/refresh'
-import { RequestRefreshToken } from '@rhao/request-basic-middleware/refresh-token'
-import { RequestSWR } from '@rhao/request-basic-middleware/swr'
+import { RequestThrottle } from '@rhao/request-basic-middleware/middleware/throttle'
+import { RequestDebounce } from '@rhao/request-basic-middleware/middleware/debounce'
+import { RequestRefresh } from '@rhao/request-basic-middleware/middleware/refresh'
+import { RequestRetry } from '@rhao/request-basic-middleware/middleware/retry'
+import { RequestRefreshToken } from '@rhao/request-basic-middleware/middleware/refresh-token'
+import { RequestSWR } from '@rhao/request-basic-middleware/middleware/swr'
 import { RequestAxios } from '@rhao/request-middleware-axios'
 import { RequestVue } from '@rhao/request-middleware-vue'
 import {
@@ -64,6 +65,8 @@ export const useRequest = createRequestHook({
 
     RequestRefresh(),
 
+    RequestRetry(),
+
     RequestRefreshToken({
       expired: (err) => {
         const error = err as AxiosError
@@ -79,7 +82,7 @@ export const useRequest = createRequestHook({
 
     RequestSWR({
       // 默认保鲜时间 10 分钟
-      staleTime: 60e3 * 5,
+      staleTime: 60e3 * 10,
     }),
   ],
 }) as UseRequest
