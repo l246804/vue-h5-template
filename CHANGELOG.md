@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.9](https://github.com/l246804/vue-h5-template/compare/v0.1.8...v0.1.9) (2023-09-19)
+
+
+### Bug Fixes
+
+* 🐛 修复 BaseService.buildURL 拼接错误 ([ca1b282](https://github.com/l246804/vue-h5-template/commit/ca1b2824421f27dadf07cacef27e58d4698d6b22))
+
+
+### Chores
+
+* 🤖 更改 Request 配置 ([ac93ede](https://github.com/l246804/vue-h5-template/commit/ac93eded90c2b033a7eee22f34cd09a6c5275918))
+
 ## [0.1.8](https://github.com/l246804/vue-h5-template/compare/v0.1.7...v0.1.8) (2023-09-14)
 
 
