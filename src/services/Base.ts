@@ -1,5 +1,4 @@
 import { combineURLs } from '@rhao/lodash-x'
-import { http } from '@/http/axios'
 
 // 微服务模块
 export type ServiceModule = ''
@@ -18,11 +17,7 @@ export abstract class BaseService {
    */
   protected controller: string
 
-  constructor(
-    controller: string,
-    module: ServiceModule = '',
-    baseURL = http.defaults.baseURL!,
-  ) {
+  constructor(controller: string, module: ServiceModule = '', baseURL = '') {
     this.baseURL = baseURL
     this.module = module
     this.controller = controller
@@ -34,10 +29,6 @@ export abstract class BaseService {
    * @returns 完整 URL
    */
   protected buildURL(endpoint = '') {
-    const url = [this.module, this.controller, endpoint].reduce(
-      (url, point) => combineURLs(point, url),
-      this.baseURL,
-    )
-    return url
+    return [this.module, this.controller, endpoint].reduce(combineURLs, this.baseURL)
   }
 }
