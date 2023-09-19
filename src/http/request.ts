@@ -80,9 +80,6 @@ export const useRequest = createRequestHook({
       allow: () => false,
     }),
 
-    RequestSWR({
-      // 默认保鲜时间 10 分钟
-      staleTime: 60e3 * 10,
-    }),
+    RequestSWR(),
   ],
 }) as UseRequest
